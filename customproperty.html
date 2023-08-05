@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom property</title>
+    <style>
+     
+
+    /*  h1{
+            color: blue;
+        }
+        p{
+            color: blue;
+        }
+        footer{
+            color: blue;
+        }
+        h2{
+            color: blue;
+            border: 2px solid aqua;
+        }
+        h3{
+            color: blue;
+          
+        }  */
+
+        
+        :root{
+            --main-color:blue ;
+            --border-color:aqua;
+            --background-color:gray;
+            
+        }
+        h1{
+            color:var(--main-color)
+        }
+        p{
+            color:var(--main-color)
+        }
+        footer{
+            color: var(--main-color)
+        }
+        h2{
+            color: blue;
+            border: 2px solid var(--border-color);
+        }
+        h3{
+            color:var(--main-color)
+        
+          
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- [advanced= css custom property and use var,calc] -->
+    <header>
+        <h1>I am exploring custom property</h1>
+        <p>well come to my website</p>
+
+    </header>
+    <main>
+         <h2>my awesome content</h2>
+         <h3>color change ctrl+F</h3>
+
+    </main>
+    <footer>
+        <p><small>copryright</small></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!-- css specificity, style priority and !important -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css specificity and priority</title>
+    <style>
+        h1{
+            color: aquamarine;
+            background-color: blue;
+        }
+        h1{
+            color: bisque;
+        }
+
+        h1{
+            color: cadetblue;
+        }
+        .first_heading{
+            background-color: brown;
+        }
+        #third{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        <h1 class="first_heading">my heading number-1</h1>
+    <h1 class="first_heading">my heading number-2</h1>
+    <h1 id="third" class="first_heading">my heading number-3</h1>
+    <h1>my heading number-4</h1> 
+     -->
+     <h1 class="first_heading">my heading number-1</h1>
+     <h1 id="third" class="first_heading">my heading number-2</h1>
+     <h1 id="third" class="first_heading">my heading number-3</h1>
+     <h1>my heading number-4</h1> 
+</body>
+</html>
+
+<!-- this is the power of tag content
+for this example,priority
+normal tag< class< id< style<!important -->
